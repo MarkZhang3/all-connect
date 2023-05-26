@@ -1,35 +1,27 @@
-function Navbar() {
-  function handleClick(name) {
-    console.log(name);
-    if (name === "Home") {
-      window.scrollTo(0, 100);
-    }
-    if (name === "About") {
-      console.log("about");
-      window.scrollTo(0, 10000);
-    }
-  }
+import NavbarButton from "./navbarButton.js";
+
+const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="#">Logo</a>
+        <p>Logo</p>
       </div>
       <ul className="navbar-links">
         <li>
-          <a href="#">Home</a>
+          <NavbarButton text="Home" />
         </li>
         <li>
-          <a href="#'">About</a>
+          <NavbarButton text="About" />
         </li>
         <li>
-          <a href="#">Services</a>
+          <NavbarButton text="Services" />
         </li>
         <li>
-          <a href="#">Contact</a>
+          <NavbarButton text="Contact" />
         </li>
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;
