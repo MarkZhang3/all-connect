@@ -8,16 +8,16 @@ const Navbar = () => {
       </div>
       <ul className="navbar-links">
         <li>
-          <NavbarButton text="Home" />
+          <NavbarButton text="Home" target="#home" />
         </li>
         <li>
-          <NavbarButton text="About" />
+          <NavbarButton text="About" target="#about" />
         </li>
         <li>
-          <NavbarButton text="Services" />
+          <NavbarButton text="Services" target="#services" />
         </li>
         <li>
-          <NavbarButton text="Contact" />
+          <NavbarButton text="Contact" target="#contact" />
         </li>
       </ul>
     </nav>

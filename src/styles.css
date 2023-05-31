@@ -23,7 +23,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   padding-left: 50px;
   padding-right: 50px;
   width: 100%;
@@ -66,4 +66,17 @@ body {
 
 .navbar-button:hover {
   border-bottom: 2px solid #F2FBE0;
+}
+
+
+.background-image {
+  background-image: url('./home-background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* container styles */
+.frame {
+  background-color: white;
+  color: black;
 }

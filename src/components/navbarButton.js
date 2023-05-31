@@ -4,6 +4,7 @@ const NavbarButton = ({ text, target }) => {
     if (section) {
       window.scrollTo({
         top: section.offsetTop,
+        left: 0,
         behavior: "smooth",
       });
     }
