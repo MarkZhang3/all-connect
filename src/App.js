@@ -10,9 +10,9 @@ function App() {
       <div className="section" id="home">
         <div className="background-image">
           <div className="home-overlay-content">
-            <h4>
-              <FontAwesomeIcon icon={faMagnifyingGlass} size="xl" /> Tech
-              Support?
+            <h4 className="home-title">
+              <FontAwesomeIcon icon={faMagnifyingGlass} size="xl" />
+              <span>Tech Support?</span>
             </h4>
             <h3>We got you covered</h3>
           </div>

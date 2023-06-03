@@ -73,10 +73,29 @@ body {
   background-image: url('./home-background.jpg');
   background-size: cover;
   background-position: center;
+  height: 100%;
+  width: 100%;
 }
 
 /* container styles */
 .frame {
   background-color: white;
   color: black;
+}
+
+h4.home-title {
+  margin: 0;
+  padding: 7px;
+  padding-left: 10px;
+  background-color: white;
+  width: 400px;
+  border-radius: 20px;
+}
+
+h4.home-title span {
+  padding-left: 12px;
+}
+
+.section {
+  height: 500px;
 }
