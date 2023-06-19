@@ -1,5 +1,5 @@
 import "./styles.css";
-import Navbar from "./components/navbar";
+import Navbar from "./components/navbar.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 

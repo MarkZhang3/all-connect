@@ -1,11 +1,10 @@
 import NavbarButton from "./navbarButton.js";
+import allConnectLogo from "../images/all_connect_logo.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
-        <p>Logo</p>
-      </div>
+      <img src={allConnectLogo} alt="image" className="navbar-logo"/>
       <ul className="navbar-links">
         <li>
           <NavbarButton text="Home" target="#home" />
