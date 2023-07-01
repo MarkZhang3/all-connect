@@ -6,6 +6,7 @@ F2F2F2 - white smoke
 F2FBE0 - beige 
 */
 
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,6 +16,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.section {
+  height: 575px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.section.visible {
+  opacity: 1;
+}
 
 .navbar {
   background-color: #333333;
@@ -30,6 +40,7 @@ body {
   position: sticky;
   top: 0;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 .navbar-logo {
@@ -69,7 +80,7 @@ body {
 
 
 .background-image {
-  background-image: url('./home-background.jpg');
+  background-image: url('./images/home-background.jpg');
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -82,19 +93,62 @@ body {
   color: black;
 }
 
+.home-overlay-content {
+  position: absolute;
+  margin: 0;
+  transform: translate(100px, 47%);
+  width: 625px;
+  padding: 25px;
+  /* background: linear-gradient(to right, rgb(177, 173, 173, 0.3), rgba(173, 173, 173, 0.3)); */
+  /* background: linear-gradient(to right, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0.3)); */
+}
+
+/* .home-overlay-content-h2 {
+  color: rgb(0, 47, 255);
+} */
+
 h4.home-title {
   margin: 0;
-  padding: 7px;
-  padding-left: 10px;
+  padding: 12px;
+  padding-left: 22px;
   background-color: white;
-  width: 400px;
+  width: 500px;
   border-radius: 20px;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 430;
 }
 
 h4.home-title span {
-  padding-left: 12px;
+  padding-left: 20px;
+  align-self: center;
 }
 
-.section {
-  height: 500px;
+
+.two-column-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  flex: 1 1 40%; 
+  padding: 20px;
+  float: left;
+}
+
+.right-column {
+  flex: 1 1 50%; 
+  padding: 20px;
+  float: left;
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    flex: 1 1 100%;
+  }
 }
